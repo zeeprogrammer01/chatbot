@@ -23,7 +23,7 @@ c = conn.cursor()
 messages = [('Hello', 'Hi I am Chatbot!'),
             ('How are you?', 'I am good'),
             ('How is the weather today?', 'It is really cold today'),
-            ('What can you do?', 'I can give you tips on PCOS'),
+            ('What can you do?', 'I can answer your queries and give you reccomendations'),
             ('Bye', 'Thanks for your time')]
 
 c.executemany('INSERT INTO chatMessages VALUES(?,?);', messages)
